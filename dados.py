@@ -2,7 +2,7 @@ from random import randint
 barra = "="
 barra2 = "-"
 
-defInicial = {
+dInicial = {
     "habiInicial" : 0,
     "enerInicial" : 0,
     "sortInicial" : 0,
@@ -16,10 +16,10 @@ config = {
 
 personagem = {
     "nome" : "sem nome",
-    "habilidade" : defInicial["habiInicial"],
-    "energia" : defInicial["enerInicial"],
-    "sorte" : defInicial["sortInicial"],
-    "ouro" : defInicial["ouroInicial"],
+    "habilidade" : 0,
+    "energia" : 0,
+    "sorte" : 0,
+    "ouro" : 0,
     "forcaAtaque" : 0,
     "magia" : 0
 }

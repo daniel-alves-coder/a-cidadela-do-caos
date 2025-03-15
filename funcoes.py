@@ -22,14 +22,20 @@ def start():
 
 def definicaoInicial():
     print(barra*25)
+    print("Primeiro digite seu nome:")
+    personagem["nome"] = input("NOME: ")
     print("Primeiro temos que definir\na sua habilidade, energia e sorte")
     print("Para definir a habilidade\nTem que jogar um dado\ne somar o valor com 6\nesse será a sua habilidade")
     print(barra2*25)
+
     print("vamos gira o dado de habilidade")
+
     girarDado()
-    print("dado:",giro["giro1"])
-    defInicial["habiInicial"] = giro["giro1"] + 6
-    print("HABILIDADE:",defInicial["habiInicial"])
+    print("dado:",giro["giro1"])                   #dado:
+    dInicial["habiInicial"] = giro["giro1"] + 6        #coloca habilidade INICIAL
+    personagem["habilidade"] = giro["giro1"] + 6       #coloca habilidade INICIAL no personagem
+    print("NOME:",personagem["nome"])              #NOME:
+    print("HABILIDADE:",dInicial["habiInicial"])   #HABILIDADE:
 
 def folhaAventuras():
     print(barra*20)
