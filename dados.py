@@ -1,9 +1,13 @@
 from random import randint
 barra = "="
 barra2 = "-"
-habilidadeInicial = (randint(1,6)) + 6
-energiaInicial = (randint(1,6)) + (randint(1,6)) + 12
-sorteInicial = (randint(1,6)) + 6
+
+defInicial = {
+    "habiInicial" : 0,
+    "enerInicial" : 0,
+    "sortInicial" : 0,
+    "ouroInicial" : 0
+}
 
 config = {
     "sistema" : True,
@@ -12,10 +16,10 @@ config = {
 
 personagem = {
     "nome" : "sem nome",
-    "habilidade" : habilidadeInicial,
-    "energia" : energiaInicial,
-    "sorte" : sorteInicial,
-    "ouro" : 0,
+    "habilidade" : defInicial["habiInicial"],
+    "energia" : defInicial["enerInicial"],
+    "sorte" : defInicial["sortInicial"],
+    "ouro" : defInicial["ouroInicial"],
     "forcaAtaque" : 0,
     "magia" : 0
 }
