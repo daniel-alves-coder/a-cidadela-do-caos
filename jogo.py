@@ -9,5 +9,5 @@ folhaAventuras()
 
 if personagem["habilidade"] > dInicial["habiInicial"]:
     while personagem["habilidade"] != dInicial["habiInicial"]:
-        print(personagem["habilidade"])
+        print(personagem["habilidade"]) #linha usada para teste
         personagem["habilidade"] = personagem["habilidade"] - 1
